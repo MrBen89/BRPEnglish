@@ -1,0 +1,38 @@
+<%- include("header-jp") -%>
+
+<div class="main">
+<h1><%= Lesson%>-1</h1>
+
+
+<div class="contentDiv">
+
+<% for (let i=0; i<LessonVol[0]; i++) { %>
+  <h4>Track <%= i+1%> </h4>
+    <audio controls>
+    <source src="<%= files1[i] %>" type="audio/mpeg">
+   Your browser does not support the audio element.
+   </audio>
+   <br />
+<% }; %>
+
+
+</div>
+
+<h1><%= Lesson%>-2</h1>
+
+<div class="contentDiv">
+
+<% for (let i=0; i<LessonVol[1]; i++) { %>
+  <h4>Track <%= i+1%> </h4>
+    <audio controls>
+    <source src="<%= files2[i] %>" type="audio/mpeg">
+   Your browser does not support the audio element.
+   </audio>
+   <br />
+<% }; %>
+
+  </div>
+</div>
+
+
+<%- include("footer-jp") -%>
